@@ -75,7 +75,7 @@ def CFSFDP(data,dc):
 
 
 if __name__ == '__main__':
-    data = np.loadtxt("C:/Users/Desktop/Data/T3.csv", delimiter=",")
+    data = np.loadtxt("C:/Users/Desktop/Data/data.csv", delimiter=",")
     # 执行聚类算法
     densityArr,densitySortArr,closestDisOverSelfDensity,closestNodeIdArr,gamma= CFSFDP(data,2)
     # 根据决策图提取类别
@@ -114,7 +114,7 @@ if __name__ == '__main__':
     L = []
     for n in corePoints:
         M.append(n)
-    with open("C:/Users/Desktop/Data/T3.csv", 'r',encoding='utf-8') as csvfile:
+    with open("C:/Users/Desktop/Data/data.csv", 'r',encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         rows = [row for row in reader]
     for i in labels:
@@ -123,4 +123,4 @@ if __name__ == '__main__':
         R.append([rows[x][0],rows[x][1],L[x]])
     name = ['lat', 'lon', 'code' ]
     SortR = pd.DataFrame(columns=name, data=R)
-    SortR.to_csv('C:/Users/Desktop/Rt.csv', encoding='utf-8')
+    SortR.to_csv('C:/Users/Desktop/ResultCenter.csv', encoding='utf-8')
