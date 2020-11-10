@@ -1,4 +1,5 @@
  <div align=center><img width="150" height="150" src="https://i.loli.net/2020/11/10/dshybin4t9DepvY.png"/></div>
+ <strong>By YunFan</strong>
 <h1>改进的基于密度峰值的快速聚类算法<em>CFSFDP</em></h1>
 <h1>——自动确定聚类中心</h1>
 <h2>运行环境:</h2>
